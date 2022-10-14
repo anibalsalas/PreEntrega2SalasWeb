@@ -28,10 +28,15 @@ a {
   height: var(--size);
   
 }
-.icons-social > a {
-  transition: .5s filter;
+
+
+.icons-social > a,
+.sec-clients > a{
+  transition: filter 0.4s;
 }
-.icons-social > a:hover{
+
+.icons-social > a:hover,
+.sec-clients > a:hover{
   filter: opacity(0.5);
 }
 .photo-frame{
@@ -77,6 +82,7 @@ a {
 .header-main{
   min-height: 100vh;
 }
+
 /********Servicios******/
 .icon-service{
   --box-size:70px;
@@ -99,4 +105,18 @@ a {
 .bg-purple{
   background-color: rgba(131 87 235 / 0.3);
   filter: opacity(0.55);
+}
+
+
+/**Media querys**/
+@media screen and (max-width:376px){
+  body{
+    margin-top:4rem;
+  }
+  .header-main{
+    height: initial;
+  }
+  .photo-frame{
+    font-size: 11px;
+  }
 }
