@@ -12,11 +12,16 @@ a {
   color: #000 !important;
 }
 
+.container > .row{
+  margin-bottom: 5rem;
+}
+/*-----> NAV */
 .navbar-main .active{
   text-decoration: underline wavy var(--color-naranja);
   text-underline-offset: 9px;
   font-weight: bold;
 }
+/*------> HEADER */
 .icons-social > a img{
   --size:30px !important;
   width: var(--size);
@@ -78,4 +83,20 @@ a {
   width: var(--box-size);
   height: var(--box-size);
   padding: 10px;
+}
+
+/******Portafolio********/
+.portfolio-item > img{
+  transition: 0.4s transform;
+}
+
+.portfolio-item:hover > img{
+  transform: scale(0.96);
+}
+
+/****Clientes****/
+
+.bg-purple{
+  background-color: rgba(131 87 235 / 0.3);
+  filter: opacity(0.55);
 }
